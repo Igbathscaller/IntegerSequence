@@ -7,7 +7,7 @@ public class Range implements IntegerSequence{
   public Range(int start,  int end){
         this.start = start;
         this.end = Math.max(start,end);
-        current = 0;
+        current = start;
   }
 
   public void reset(){
@@ -15,7 +15,7 @@ public class Range implements IntegerSequence{
   }
 
   public int length(){
-    return end - start;
+    return end - start + 1;
   }
   
   //When current is no longer a valid element in the range, it should return false. 

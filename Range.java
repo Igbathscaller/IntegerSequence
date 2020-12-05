@@ -27,7 +27,11 @@ public class Range implements IntegerSequence{
   //This will return the current value, it will also increase current value by 1. 
   //e.g.  if current is 5. This will make current 6, and return 5. 
   public int next(){
+    if (hasNext()){
     return current++;
+    }
+    else{
+        throw new NoSuchElementException("End of Sequence");
+    }
   }
-  
 }

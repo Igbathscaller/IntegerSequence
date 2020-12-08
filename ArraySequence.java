@@ -11,6 +11,15 @@ public class ArraySequence implements IntegerSequence{
             data[i]=other[i];
         }
     }
+    //Construct the sequence from another sequence
+    public ArraySequence(IntegerSequence otherseq){
+        data = new int[otherseq.length()];
+        otherseq.reset();
+        for(int i = 0; otherseq.hasNext(); i++){
+            data[i]=otherseq.next();
+        }
+    }
+
     //does the sequence have more elements? 
     public boolean hasNext(){
         return currentIndex<data.length;

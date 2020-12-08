@@ -10,7 +10,7 @@ public class Main{
         System.out.println();
 
         int[]nums = {1,3,5,0,-1,3,9};
-        IntegerSequence as = new ArraySequence(nums);
+        IntegerSequence as = new ArraySequence(r);
     
         System.out.println("ArraySequence(array):");
         while(as.hasNext()){

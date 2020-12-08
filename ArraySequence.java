@@ -18,6 +18,7 @@ public class ArraySequence implements IntegerSequence{
         for(int i = 0; otherseq.hasNext(); i++){
             data[i]=otherseq.next();
         }
+        currentIndex = 0;
     }
 
     //does the sequence have more elements? 
